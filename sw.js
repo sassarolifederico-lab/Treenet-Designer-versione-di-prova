@@ -1,6 +1,6 @@
 // Treenet prova: funziona anche offline. Prima la rete (così gli aggiornamenti arrivano subito),
 // la copia salvata solo se manca la connessione.
-const CACHE = 'treenet-prova-22954dbe50';
+const CACHE = 'treenet-prova-07da0b7711';
 const FILES = ['./', 'index.html', 'vendor/three.min.js', 'vendor/OrbitControls.js', 'manifest.webmanifest', 'icona.svg', 'icona-192.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => {
